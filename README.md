@@ -29,6 +29,8 @@ The browser’s own initial fullscreen notification may appear briefly. The page
 
 ## Offline
 
+While connected, reloading checks the server for the latest slides and notes. Loaded presentations are never replaced in the middle of a talk. Use **Settings → Load latest presentation** to refresh the app and its offline copy together, then reopen the audience window. If an older browser copy persists, open `/update.html` on the same presentation address and choose **Load latest presentation**.
+
 Wait for **Ready offline** in the sidebar before disconnecting. The service worker caches the complete app, deck, notes, images, fonts and overview thumbnails. It can then reload on the same address without a connection. First use requires a successful online load. Private browsing or browser storage clearing can remove this cache.
 
 Use the backup download in settings as a second copy. Unzip it and open `presenter.html` in Chrome. All slide imagery and fonts are embedded. File URLs support the paired windows through direct messaging, but browser security policies can limit local-file previews. The hosted, cached version is the preferred offline fallback.

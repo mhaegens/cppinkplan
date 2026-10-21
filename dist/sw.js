@@ -1,4 +1,4 @@
-const VERSION='cppinkplan-7256e908302b17';
+const VERSION='cppinkplan-330b98e9e3d009';
 const CORE=['./','index.html','presenter.html','Canon - Presenter Notes.html','Canon - Ink Planning Story.html',...Array.from({length:14},(_,i)=>'previews/slide-'+String(i+1).padStart(2,'0')+'.jpg')].map(p=>new URL(p,self.location).href);
 self.addEventListener('install',e=>e.waitUntil((async()=>{const cache=await caches.open(VERSION);await cache.addAll(CORE);await self.skipWaiting();})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const key of await caches.keys())if(key.startsWith('cppinkplan-')&&key!==VERSION)await caches.delete(key);await self.clients.claim();for(const c of await self.clients.matchAll())c.postMessage({type:'OFFLINE_READY'});})()));

@@ -51,8 +51,6 @@ The presenter UI is `/` or `/presenter.html`. The audience opens the embedded de
 
 The planning schedules are illustrative explanations of Canon’s supplied scenario. They are not measured savings or a live SAP optimizer result. Spoken notes retain the Canon scenario references and solution caveats. SAP feature documentation is linked quietly from the conclusion and included in the slides’ sources panel.
 
-Cover photographs: Canon Production Printing, *New ink production facility*, Venlo. Both photographs are original Canon facility photographs, not generic stock images or camera-product photographs.
-
-Source: https://cpp.canon/new-ink-production-facility/
+Cover photographs: the two Canon photographs supplied by the presenter: a Canon operator on the shop floor and an engineer working on machinery. The original supplied photographs are embedded without alteration; their framing is controlled by the slide layout.
 
 SAP logo and SAP 72 typeface are retained from the provided SAP visual materials. The title composition follows the supplied reference. The deployment does not contact an image or font CDN.
